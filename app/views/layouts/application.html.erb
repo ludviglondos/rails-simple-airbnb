@@ -4,12 +4,16 @@
     <title>RailsSimpleAirbnb</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div class="banner">
+      <h3>Simple Airbnb</h3>
+      <button type="button" class="btn btn-outline-primary"><%= link_to "Add flat", new_flat_path %></button>
+    </div>
     <%= yield %>
   </body>
 </html>
